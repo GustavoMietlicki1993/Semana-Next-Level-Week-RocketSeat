@@ -1,7 +1,7 @@
 
 @media (max-width: 900px) {
     #page-home {
-        background-position: 70vh;
+        background-position-x: 70vh;
     }
 
     #page-home .content {
@@ -30,5 +30,15 @@
 
     #page-home main a {
         width: 70%;
+    }
+}
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: vh;
+    }
+}
+@media (max-height: 760px) {
+    #page-home {
+        background-position-y: 200px;
     }
 }
