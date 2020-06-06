@@ -6,17 +6,17 @@
         <title>Criar um ponto de coleta</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/create-point.css">        
-        <link rel="stylesheet" href="styles/responsive.css">
+        <link rel="stylesheet" href="/public/styles/main.css">
+        <link rel="stylesheet" href="/public/styles/create-point.css">        
+        <link rel="stylesheet" href="/public/styles/responsive.css">
     </head>
 
         <body>
             <div id="page-create-point">
                 
                 <header>
-                    <img src="assets/logo.svg" alt="logo">
-                    <a href="#">
+                    <img src="/public/assets/logo.svg" alt="logo">
+                    <a href="index.html">
                         <span></span>
                         Voltar para home
                     </a>
@@ -67,11 +67,52 @@
                         </div>
                     </fieldset>
 
+                    <fieldset>
+                        <legend>
+                            <h2>Itens de coleta</h2>
+                        </legend>
+
+                        <div class="items-grid">
+                            <li data-id="1" >
+                                <img src="/public/assets/lampadas.svg" alt="Lâmpadas">
+                                <span>Lâmpadas</span>
+                            </li>
+
+                            <li data-id="2">
+                                <img src="/public/assets/baterias.svg" alt="Pilhas e Baterias">
+                                <span>Pilhas e Baterias</span>
+                            </li>
+
+                            <li data-id="3">
+                                <img src="/public/assets/papeis-papelao.svg" alt="Papeis e Papelão">
+                                <span>Papeis e Papelão</span>
+                            </li>
+
+                            <li data-id="4">
+                                <img src="/public/assets/eletronicos.svg" alt="Residuos Eletrônicos">
+                                <span>Residuos Eletrônicos</span>
+                            </li>
+
+                            <li data-id="5">
+                                <img src="/public/assets/organicos.svg" alt="Residuos Orgânicos">
+                                <span>Residuos Orgânicos</span>
+                            </li>
+
+                            <li data-id="6">
+                                <img src="/public/assets/oleo.svg" alt="Óleo de Cozinha">
+                                <span>Óleo de Cozinha</span>
+                            </li>
+
+                        </div>
+
+                        <input type="hidden" name="items">
+
+                    </fieldset>
 
                     <button type="submit">Cadastrar ponto de coleta</button>
                 </form>
                                     
             </div>
-            <script src="scripts/create-points.js"></script>
+            <script src="/public/scripts/create-points.js"></script>
         </body>
 </html>
